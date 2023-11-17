@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --FONT: "Plus Jakarta Sans", sans-serif;
+  --White: hsl(0, 0%, 100%);
+  --Very_light_grayish_blue: hsl(210, 60%, 98%);
+  --Light_grayish_blue_1: hsl(210, 20%, 72%);
+  --Light_grayish_blue_2: hsl(205, 33%, 90%);
+  --Grayish_blue: hsl(219, 14%, 63%);
+  --Dark_grayish_blue: hsl(219, 12%, 42%);
+  --Very_dark_blue: hsl(224, 21%, 14%);
+  --Blue: hsl(219, 85%, 26%);
+  --Red: hsl(1, 90%, 64%);
+}
+
+body {
+  background-color: var(--Very_light_grayish_blue);
+  font-family: var(--FONT);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notification-box {
+  background-color: var(--White);
+  width: 40%;
+  min-width: 600px;
+  border-radius: 15px;
+  word-spacing: 3px;
+  padding: 20px 13px 13px 13px;
+  /* box-shadow: 5px 5px 5px -5px; */
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.number {
+  color: var(--White);
+  border: 1px solid black;
+  border-radius: 3px;
+  background-color: var(--Blue);
+  font-size: large;
+  padding: 1px 7px;
+}
+
+.notification-list {
+  font-size: 16px;
+  color: var(--Dark_grayish_blue);
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.notification {
+  display: flex;
+  gap: 0.5rem;
+  /* border: 1px; */
+  padding: 12px;
+}
+
+.notification > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.notification:last-child {
+  float: right;
+}
+
+.notification > .notification-body {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.notification-unread {
+    background-color: var(--Light_grayish_blue_2);
+    border-radius: 10px;
+}
+
+.notification-dot-active {
+    display:inline-block;
+    width: 10px;
+    height:10px;
+    border-radius: 10px;
+    background-color: var(--Red);
+}
+
+img {
+  width: 45px;
+  height: 45px;
+}
+
+.name {
+  color: var(--Very_dark_blue);
+  font-weight: 800;
+}
+
+.group-name {
+  font-weight: 600;
+  color: var(--Blue);
+}
+
+.event {
+  color: var(--Dark_grayish_blue);
+  font-weight: 600;
+}
+
+.time {
+  color: var(--Light_grayish_blue_1);
+}
+
+.message {
+  color: var(--Dark_grayish_blue);
+  border: 2px solid var(--Light_grayish_blue_2);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.heading > button {
+    border: none;
+    background-color: var(--White);
+    font-size: inherit;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.name:hover, .event:hover, .group-name:hover, .heading > button:hover {
+    color:var(--Blue);
+    cursor: pointer;
+}
+
+.message:hover {
+    background-color: var(--Light_grayish_blue_2);
+    cursor: pointer;
+}
+
+.image:hover{
+    cursor: pointer;
+    outline: 2px solid var(--Light_grayish_blue_2);
+    border-radius: 5px;
+}
+
+
+@media screen and (max-width:800px) {
+    .notification-box {
+        width: 80%;
+        min-width: 0px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .notification-box {
+        width: 100%;
+        min-width: 0px;
+    }
+}
