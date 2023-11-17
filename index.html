@@ -23,11 +23,13 @@
   </head>
   <body>
     <div class="notification-box">
-      <div class="heading">
-        <h3>Notifications <span id="notification_count" class="number">3</span></h3>
+      <header class="heading">
+        <h1>
+          Notifications <span id="notification_count" class="number">3</span>
+        </h1>
         <button onclick="markRead()" class="time">Mark all as read</button>
-      </div>
-      <div id="notification_list" class="notification-list">
+      </header>
+      <main id="notification_list" class="notification-list">
         <div class="notification notification-unread">
           <img src="./assets/images/avatar-mark-webber.webp" />
           <div>
@@ -41,26 +43,31 @@
         </div>
 
         <div class="notification notification-unread">
-          <img src="./assets/images/avatar-angela-gray.webp" />
+          <img alt="image" src="./assets/images/avatar-angela-gray.webp" />
           <div>
-            <p><span class="name">Angela Gray</span> followed you <span class="notification-dot-active"></span></p>
+            <p>
+              <span class="name">Angela Gray</span> followed you
+              <span class="notification-dot-active"></span>
+            </p>
             <p class="time">5m ago</p>
           </div>
         </div>
 
         <div class="notification notification-unread">
-          <img src="./assets/images/avatar-jacob-thompson.webp" />
+          <img alt="image" src="./assets/images/avatar-jacob-thompson.webp" />
           <div>
             <p>
               <span class="name">Jacob Thompson</span> has joined your
-              group<span class="group-name"> Chess Club <span class="notification-dot-active"></span></span>
+              group<span class="group-name">
+                Chess Club <span class="notification-dot-active"></span
+              ></span>
             </p>
             <p class="time">1 day ago</p>
           </div>
         </div>
 
         <div class="notification">
-          <img src="./assets/images/avatar-rizky-hasanuddin.webp" />
+          <img alt="image" src="./assets/images/avatar-rizky-hasanuddin.webp" />
           <div>
             <p>
               <span class="name">Rizky Hasanuddin </span>sent you a private
@@ -77,7 +84,7 @@
         </div>
 
         <div class="notification">
-          <img src="./assets/images/avatar-kimberly-smith.webp" />
+          <img alt="image" src="./assets/images/avatar-kimberly-smith.webp" />
           <div class="notification-body">
             <div>
               <p>
@@ -86,12 +93,12 @@
               </p>
               <p class="time">1 week ago</p>
             </div>
-            <img src="./assets/images/image-chess.webp"  class="image"/>
+            <img alt="image" src="./assets/images/image-chess.webp" class="image" />
           </div>
         </div>
 
         <div class="notification">
-          <img src="./assets/images/avatar-nathan-peterson.webp" />
+          <img alt="image" src="./assets/images/avatar-nathan-peterson.webp" />
           <div>
             <p>
               <span class="name">Nathan Peterson</span> reacted to your recent
@@ -105,7 +112,7 @@
         </div>
 
         <div class="notification">
-          <img src="./assets/images/avatar-anna-kim.webp" />
+          <img alt="image" src="./assets/images/avatar-anna-kim.webp" />
           <div>
             <p>
               <span class="name">Anna Kim</span> left the group
@@ -114,7 +121,7 @@
             <p class="time">2 weeks ago</p>
           </div>
         </div>
-      </div>
+      </main>
     </div>
   </body>
 </html>

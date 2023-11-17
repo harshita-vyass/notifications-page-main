@@ -28,7 +28,7 @@ body {
 
 .notification-box {
   background-color: var(--White);
-  width: 40%;
+  width: 45%;
   min-width: 600px;
   border-radius: 15px;
   word-spacing: 3px;
@@ -39,6 +39,10 @@ body {
 .heading {
   display: flex;
   justify-content: space-between;
+}
+
+h1 {
+    font-size: large;
 }
 
 .number {
